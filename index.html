@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Save WhatsApp Voice Note as MP3 (Private & Secure)</title>
+    <meta name="description"
+        content="Convert WhatsApp voice notes (.opus) to MP3 in your browser. Private: files never leave your device." />
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Save WhatsApp Voice Note as MP3 (Private & Secure)" />
+    <meta property="og:description"
+        content="Convert WhatsApp voice notes (.opus/.ogg) to MP3 in your browser. Private: files never leave your device." />
+    <meta property="og:url" content="https://YOUR_DOMAIN/save-whatsapp-voice-note-as-mp3" />
+    <meta property="og:image" content="https://YOUR_DOMAIN/og-whatsapp-mp3.png" />
+    <meta property="og:site_name" content="Not Today Tools" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Save WhatsApp Voice Note as MP3" />
+    <meta name="twitter:description" content="Convert .opus to MP3 in your browser. Files never leave your device." />
+    <meta name="twitter:image" content="https://YOUR_DOMAIN/og-whatsapp-mp3.png" />
+
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="canonical" href="https://YOUR_DOMAIN/save-whatsapp-voice-note-as-mp3" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="robots" content="index,follow" />
+    <link rel="canonical" href="https://YOURDOMAIN.com/save-whatsapp-voice-note-as-mp3" />
+    <meta name="robots" content="index,follow" />
+
+</head>
+
+<body>
+    <main class="wrap">
+        <header class="header">
+            <h1>Save WhatsApp Voice Note as MP3</h1>
+            <p class="sub">
+                Private & secure: files never leave your device. Works in your browser.
+            </p>
+        </header>
+
+        <section class="card">
+            <div id="drop" class="drop">
+                <div class="row">
+                    <input id="file" type="file" accept=".opus,audio/ogg,audio/*" />
+                    <select id="quality">
+                        <option value="6">Fast (smaller)</option>
+                        <option value="4" selected>Balanced</option>
+                        <option value="2">High</option>
+                    </select>
+                    <button id="convert" disabled>Convert to MP3</button>
+                </div>
+                <p class="dropHint">Tip: you can drag & drop your WhatsApp .opus file here.</p>
+            </div>
+
+            <div class="progress">
+                <div class="bar" id="bar"></div>
+            </div>
+
+            <pre id="log" class="log" aria-live="polite"></pre>
+
+            <div id="result" class="result hidden">
+                <audio id="player" controls></audio>
+                <a id="download" class="dl" download>Download MP3</a>
+            </div>
+
+            <p class="note">
+                Tip: WhatsApp voice notes are usually <strong>.opus</strong> files.
+            </p>
+        </section>
+
+        <section class="guide">
+            <h2>How to download a WhatsApp voice note (.opus) to convert</h2>
+            <p class="muted">
+                WhatsApp voice notes are usually saved as <strong>.opus</strong>. If you can’t find the file, follow the
+                steps below.
+            </p>
+
+            <div class="grid2">
+                <article class="panel">
+                    <h3>On iPhone (iOS)</h3>
+                    <ol>
+                        <li>Open WhatsApp and find the voice note.</li>
+                        <li>Tap and hold the voice note, then choose <strong>Forward</strong>.</li>
+                        <li>Select the note (checkmark), then tap the <strong>Share</strong> icon.</li>
+                        <li>Choose <strong>Save to Files</strong> and save it to a folder you can find (e.g.,
+                            “Downloads”).</li>
+                        <li>Back on this page, tap <strong>Choose file</strong> and select the saved file.</li>
+                    </ol>
+                    <p class="tip"><strong>Tip:</strong> If you don’t see “Save to Files”, choose “Share” and look for
+                        it in the list.</p>
+                </article>
+
+                <article class="panel">
+                    <h3>On Android</h3>
+                    <ol>
+                        <li>Open WhatsApp and find the voice note.</li>
+                        <li>Tap and hold the voice note, then tap <strong>Share</strong>.</li>
+                        <li>Select <strong>Files</strong> / <strong>File Manager</strong> and save it somewhere
+                            accessible (e.g., Downloads).</li>
+                        <li>Back on this page, upload the saved <strong>.opus</strong> file and convert.</li>
+                    </ol>
+                    <p class="tip"><strong>Alternative:</strong> Some phones store voice notes inside
+                        <em>WhatsApp/Media</em>, but it varies by device/version.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="faq2" id="faq">
+            <h2>FAQ</h2>
+
+            <details>
+                <summary>Is this converter private?</summary>
+                <p>Yes. The conversion happens on your device (in your browser). Your file is not uploaded to a server.
+                </p>
+            </details>
+
+            <details>
+                <summary>Why does WhatsApp audio come as .opus?</summary>
+                <p>WhatsApp uses efficient audio compression to keep voice notes small. OPUS is common for voice
+                    messages.</p>
+            </details>
+
+            <details>
+                <summary>Will this work on iPhone Safari?</summary>
+                <p>It often works, but for best results use Chrome or Edge on desktop. Mobile browsers have tighter
+                    memory limits.</p>
+            </details>
+
+            <details>
+                <summary>It gets stuck on “Loading converter engine”. What do I do?</summary>
+                <p>The first run downloads the converter engine into your browser. Try a stable connection, wait a bit,
+                    and avoid private/incognito mode.</p>
+            </details>
+
+            <details>
+                <summary>The conversion failed. Why?</summary>
+                <p>Common causes: very large files, low device memory, or unsupported audio containers. Close other
+                    tabs/apps and try again.</p>
+            </details>
+
+            <details>
+                <summary>Does this work for .ogg too?</summary>
+                <p>Yes, in many cases. WhatsApp voice notes may also appear as OGG containers with OPUS audio.</p>
+            </details>
+
+            <details>
+                <summary>Is this free?</summary>
+                <p>Yes. You can convert voice notes for free, right in your browser.</p>
+            </details>
+
+            <details>
+                <summary>Can I convert multiple files at once?</summary>
+                <p>Not yet. Batch conversion may be added later if there’s demand.</p>
+            </details>
+        </section>
+
+        <section class="trust">
+            <h2>Privacy & security</h2>
+            <ul>
+                <li><strong>No uploads:</strong> files stay on your device.</li>
+                <li><strong>No account:</strong> no sign-up required.</li>
+                <li><strong>Fast:</strong> after the first load, conversions are quicker.</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <script type="module" src="./main.js"></script>
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is this converter private?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. The conversion happens on your device (in your browser). Your file is not uploaded to a server."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does WhatsApp audio come as .opus?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "WhatsApp uses efficient audio compression to keep voice notes small. OPUS is commonly used for voice messages."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Will this work on iPhone Safari?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It often works, but desktop Chrome or Edge usually performs best. Mobile browsers can have stricter memory limits."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "It gets stuck on loading the converter engine. What do I do?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The first run downloads the converter engine into your browser. Use a stable connection, wait a bit, and avoid incognito mode."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "The conversion failed. Why?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Common causes include very large files, low device memory, or unsupported audio containers. Close other tabs/apps and try again."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does this work for .ogg too?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, in many cases. WhatsApp voice notes may appear as OGG containers with OPUS audio."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is this free?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. You can convert WhatsApp voice notes to MP3 for free, right in your browser."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I convert multiple files at once?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not yet. Batch conversion may be added later if there is demand."
+      }
+    }
+  ]
+}
+</script>   
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Save WhatsApp Voice Note as MP3",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "description": "Convert WhatsApp voice notes (.opus/.ogg) to MP3 in your browser. Private: files never leave your device."
+}
+</script>
+
+</body>
+
+</html>
