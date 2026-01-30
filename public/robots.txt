@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://whatsapp-to-mp3-production.up.railway.app/sitemap.xml
