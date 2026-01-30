@@ -8,7 +8,7 @@ RUN npm ci
 
 # Copia o resto e builda
 COPY . .
-RUN npm run build
+RUN npx vite build
 
 # ---------- Run stage ----------
 FROM node:20-alpine
