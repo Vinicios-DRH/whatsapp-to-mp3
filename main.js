@@ -158,6 +158,12 @@ function safeBaseName(filename) {
 }
 
 btn.addEventListener("click", async () => {
+    if (isIOS() && isSafari()) {
+        log("❌ iOS Safari has limitations with audio conversion.");
+        log("👉 Please use Chrome or Edge on desktop for best results.");
+        btn.disabled = false;
+        return;
+    }
     if (!selectedFile) return;
 
     btn.disabled = true;
