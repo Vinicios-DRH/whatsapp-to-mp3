@@ -224,3 +224,26 @@ option {
     margin: 8px 0;
     opacity: .9;
 }
+
+.ad-slot {
+    margin: 18px 0;
+    padding: 12px;
+    border: 1px solid rgba(255, 255, 255, .08);
+    border-radius: 14px;
+    background: rgba(255, 255, 255, .03);
+}
+
+.footer {
+    opacity: .8;
+    font-size: .95rem;
+    text-align: center;
+    margin: 26px 0 18px;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
